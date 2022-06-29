@@ -1,5 +1,6 @@
-on: push
-  paths-ignore:
+on: 
+  push:
+    paths-ignore:
       - '**/README.md'
       - '**/custom.drawio.svg'
 
