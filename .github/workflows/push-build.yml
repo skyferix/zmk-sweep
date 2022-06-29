@@ -1,4 +1,7 @@
-on: [pull_request, workflow_dispatch]
+on: push
+  paths-ignore:
+      - '**/README.md'
+      - '**/custom.drawio.svg'
 
 name: Build
 
