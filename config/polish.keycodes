@@ -1,0 +1,12 @@
+// Custom keycodes for polish input
+
+#define PL_A  RA(A)            // ą
+#define PL_E  RA(E)            // ę
+#define PL_S  RA(S)            // ś
+#define PL_L  RA(L)            // ł
+#define PL_O  RA(O)            // ó
+#define PL_Z  RA(Z)            // ż
+#define PL_ZZ RA(X)            // ź
+#define PL_C  RA(C)            // ć
+#define PL_N  RA(N)            // ń
+
