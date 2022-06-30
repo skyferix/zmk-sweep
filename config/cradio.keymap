@@ -119,10 +119,10 @@
         // Used to type regional accents.
        		accent_layer {
 		bindings = <
-		&none    &none     &none    &none    &none       &none &none &none &none &none 
-		&kp PL_A &kp PL_E  &kp PL_O &kp PL_L &kp PL_N    &none &none &none &none &none
-		&kp PL_Z &kp PL_ZZ &kp PL_C &none    &none       &none &none &none &none &none
-          	                            &none    &none       &none &none 
+		&none    &none     &none    &none    &none                  &none &none &none &none &none 
+		&kp PL_A &kp PL_E  &kp PL_O &kp PL_L &kp PL_N               &none &none &none &none &none
+		&kp PL_Z &kp PL_ZZ &kp PL_C &none    &none                  &none &none &none &none &none
+          	                            &none    &mt LSHIFT SPACE       &none &none 
 		>;
 		};
 
