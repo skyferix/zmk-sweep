@@ -4,7 +4,7 @@ on:
       - '**/README.md'
       - '**/custom.drawio.svg'
 
-name: Build
+name: Push Build
 
 jobs:
   build:
