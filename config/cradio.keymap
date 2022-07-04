@@ -70,8 +70,8 @@
        		default_layer {
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp COLON
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp SEMI
+		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI
+		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp COLON
                      &mo EXT &mt LSHIFT SPACE           &mt RSHIFT SPACE &sl SYM
 		>;
 		};
@@ -80,8 +80,8 @@
        		sym_layer {
 		bindings = <
 		&kp N1 &kp N2    &kp N3   &kp N4   &kp N5	&kp N6    &kp N7    &kp N8   &kp N9       &kp N0
-		&kp LT &kp PRCNT &kp LPAR &kp LBRC &kp LBKT     &kp EQUAL &kp QMARK &kp SQT  &kp KP_PLUS  &kp STAR
-		&kp GT &kp DLLR  &kp RPAR &kp RBRC &kp LBKT	&kp AT    &kp EXCL  &kp APOS &kp KP_MINUS &kp FSLH
+		&kp LT &kp PRCNT &kp LPAR &kp LBRC &kp LBKT     &kp EQUAL &kp QMARK &kp SQT  &kp KP_MINUS &kp FSLH
+		&kp GT &kp DLLR  &kp RPAR &kp RBRC &kp RBKT	&kp AT    &kp EXCL  &kp APOS &kp KP_PLUS  &kp STAR
 					  &mo FNC  &mo SYM2     &trans    &trans
 		>;
 		};
