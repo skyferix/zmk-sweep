@@ -132,7 +132,7 @@
 		>;
 		};
 	// Free time layout
-                ext_layer {
+                free_time_layer {
 		bindings = <
 		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE $tog FREE &kp UP    $tog FREE $tog FREE
 		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE &kp LEFT  &kp DOWN  &kp RIGHT $tog FREE
