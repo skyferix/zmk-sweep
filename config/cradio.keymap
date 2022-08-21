@@ -17,7 +17,6 @@
     #define SYM2 4
     #define ACCENT 5
     #define SETTINGS 6
-    #define FREE 7
 // -----------------
 
 &sk {
@@ -25,17 +24,17 @@
 };
 
 / {
-		macros {
-				// sometimes my device thinks a modifier is being held down
-				// pressing all modifiers fixes it.
-				unstick: unstick {
-					label = "ZM_unstick";
-					compatible = "zmk,behavior-macro";
-					#binding-cells = <0>;
-					bindings
-						= <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
-				};
-		};
+	macros {
+			// sometimes my device thinks a modifier is being held down
+			// pressing all modifiers fixes it.
+			unstick: unstick {
+				label = "ZM_unstick";
+				compatible = "zmk,behavior-macro";
+				#binding-cells = <0>;
+				bindings
+					= <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
+			};
+	};
 
     combos {
         compatible = "zmk,combos";
@@ -64,83 +63,72 @@
 
         // Base alpha layer
        		default_layer {
-		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI
-		&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp COLON
-                           &mo EXT &kp LSHIFT           &kp SPACE &sl SYM
-		>;
+			bindings = <
+			&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
+			&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI
+			&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp COLON
+				   &mo EXT &kp LSHIFT           &kp SPACE &sl SYM
+			>;
 		};
 
         // Numbers and high frequency symbols
        		sym_layer {
-		bindings = <
-		&kp N1 &kp N2    &kp N3   &kp N4   &kp N5	&kp N6    &kp N7    &kp N8   &kp N9       &kp N0
-		&kp LT &kp PRCNT &kp LPAR &kp LBRC &kp LBKT     &kp EQUAL &kp QMARK &kp SQT  &kp KP_MINUS &kp FSLH
-		&kp GT &kp DLLR  &kp RPAR &kp RBRC &kp RBKT	&kp AT    &kp EXCL  &kp DQT &kp KP_PLUS  &kp STAR
-					  &mo FNC  &mo SYM2     &trans    &trans
-		>;
+			bindings = <
+			&kp N1 &kp N2    &kp N3   &kp N4   &kp N5	&kp N6    &kp N7    &kp N8   &kp N9       &kp N0
+			&kp LT &kp PRCNT &kp LPAR &kp LBRC &kp LBKT     &kp EQUAL &kp QMARK &kp SQT  &kp KP_MINUS &kp FSLH
+			&kp GT &kp DLLR  &kp RPAR &kp RBRC &kp RBKT	&kp AT    &kp EXCL  &kp DQT &kp KP_PLUS  &kp STAR
+						  &mo FNC  &mo SYM2     &trans    &trans
+			>;
 		};
 
         // Main modifiers and arrow keys
                 ext_layer {
-		bindings = <
-		&kp ESC   &trans    &trans     &trans    &trans       &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
-		&sk LALT  &sk LGUI  &sk LSHIFT &sk LCTRL &kp RALT     &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &none
-		&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp TAB      &kp LC(BSPC) &kp BSPC &none    &kp DEL   &kp LC(DEL)
-					       &trans    &kp LCTRL    &kp ENTER    &mo FNC
-		>;
+			bindings = <
+			&kp ESC   &trans    &trans     &trans    &trans       &kp PG_UP    &kp HOME &kp UP   &kp END   &kp CAPS
+			&sk LALT  &sk LGUI  &sk LSHIFT &sk LCTRL &kp RALT     &kp PG_DN    &kp LEFT &kp DOWN &kp RIGHT &none
+			&kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp TAB      &kp LC(BSPC) &kp BSPC &none    &kp DEL   &kp LC(DEL)
+						       &trans    &kp LCTRL    &kp ENTER    &mo FNC
+			>;
 		};
 
         // Function keys with modifiers
        		fnc_layer {
-		bindings = <
-		&kp F1   &kp F2   &kp F3     &kp F4    &kp F5       &kp F6  &kp F7  &kp F8          &kp F9 &kp F10 
-		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12 &kp PRINTSCREEN &trans &trans
-		&none    &none    &none      &none     &none        &none   &none   &none           &none  &none 
-          				     &none     &none        &none   &none  
-		>;
+			bindings = <
+			&kp F1   &kp F2   &kp F3     &kp F4    &kp F5       &kp F6  &kp F7  &kp F8          &kp F9 &kp F10 
+			&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12 &kp PRINTSCREEN &trans &trans
+			&none    &none    &none      &none     &none        &none   &none   &none           &none  &none 
+						     &none     &none        &none   &none  
+			>;
 		};
 
         // Low frequency symbols.
        		symbols_2_layer {
-		bindings = <
-		&kp CARET &kp UNDER &none    &none    &kp HASH        &none &none &none &none &none 
-		&kp GRAVE &kp TILDE &kp BSLH &kp PIPE &kp AMPS        &none &none &none &none &none
-		&none     &none     &none    &none    &none           &none &none &none &none &none
-          				     &none    &none           &none &none 
-		>;
+			bindings = <
+			&kp CARET &kp UNDER &none    &none    &kp HASH        &none &none &none &none &none 
+			&kp GRAVE &kp TILDE &kp BSLH &kp PIPE &kp AMPS        &none &none &none &none &none
+			&none     &none     &none    &none    &none           &none &none &none &none &none
+						     &none    &none           &none &none 
+			>;
 		};
 
         // Used to type regional accents.
        		accent_layer {
-		bindings = <
-		&none    &none     &kp PL_E &none    &none                  &none &none &none &none &none 
-		&kp PL_A &kp PL_S  &kp PL_O &kp PL_L &kp PL_N               &none &none &none &none &none
-		&kp PL_Z &kp PL_ZZ &kp PL_C &none    &none                  &none &none &none &none &none
-          	                            &none    &mt LSHIFT SPACE       &none &none 
-		>;
+			bindings = <
+			&none    &none     &kp PL_E &none    &none                  &none &none &none &none &none 
+			&kp PL_A &kp PL_S  &kp PL_O &kp PL_L &kp PL_N               &none &none &none &none &none
+			&kp PL_Z &kp PL_ZZ &kp PL_C &none    &none                  &none &none &none &none &none
+						    &none    &mt LSHIFT SPACE       &none &none 
+			>;
 		};
 
         // Used to change the keyboard's settings.
        		settings_layer {
-		bindings = <
-		&bootloader &none &none      &bt BT_CLR &bt BT_SEL 0      &bt BT_SEL 3 &none &unstick &none &bootloader 
-		&none       &none $tog FREE  &none      &bt BT_SEL 1      &bt BT_SEL 4 &none &none    &none &none
-		&none       &none &none      &none      &bt BT_SEL 2      &bt BT_SEL 5 &none &none    &none &none
-                                             &none      &none             &none        &none 
-		>;
-		};
-	// Free time layout
-                free_time_layer {
-		bindings = <
-		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE $tog FREE &kp UP    $tog FREE $tog FREE
-		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE &kp LEFT  &kp DOWN  &kp RIGHT $tog FREE
-		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE $tog FREE $tog FREE $tog FREE $tog FREE
-					      $tog FREE $tog FREE     $tog FREE $tog FREE
-		>;
-		};	
-		
-        
-	};
+			bindings = <
+			&bootloader &none &none      &bt BT_CLR &bt BT_SEL 0      &bt BT_SEL 3 &none &unstick &none &bootloader 
+			&none       &none $tog FREE  &none      &bt BT_SEL 1      &bt BT_SEL 4 &none &none    &none &none
+			&none       &none &none      &none      &bt BT_SEL 2      &bt BT_SEL 5 &none &none    &none &none
+						     &none      &none             &none        &none 
+			>;
+                };
+    };
 };
