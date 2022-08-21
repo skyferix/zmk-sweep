@@ -17,6 +17,7 @@
     #define SYM2 4
     #define ACCENT 5
     #define SETTINGS 6
+    #define FREE 7
 // -----------------
 
 &sk {
@@ -125,10 +126,20 @@
        		settings_layer {
 			bindings = <
 			&bootloader &none &none      &bt BT_CLR &bt BT_SEL 0      &bt BT_SEL 3 &none &unstick &none &bootloader 
-			&none       &none $tog FREE  &none      &bt BT_SEL 1      &bt BT_SEL 4 &none &none    &none &none
+			&none       &none &tog FREE  &none      &bt BT_SEL 1      &bt BT_SEL 4 &none &none    &none &none
 			&none       &none &none      &none      &bt BT_SEL 2      &bt BT_SEL 5 &none &none    &none &none
 						     &none      &none             &none        &none 
 			>;
                 };
+		
+	// Free time layout
+                free_time_layer {
+			bindings = <
+			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &tog FREE &kp UP    &tog FREE &tog FREE
+			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &kp LEFT  &kp DOWN  &kp RIGHT &tog FREE
+			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
+						      &tog FREE &tog FREE     &tog FREE &tog FREE
+			>;
+		};
     };
 };
