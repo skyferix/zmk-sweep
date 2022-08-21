@@ -135,10 +135,10 @@
 	// Free time layout
                 free_time_layer {
 			bindings = <
-			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &tog FREE &kp UP    &tog FREE &tog FREE
-			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &kp LEFT  &kp DOWN  &kp RIGHT &tog FREE
+			&kp ESC   &tog FREE &kp UP    &tog FREE &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
+			&tog FREE &kp LEFT  &kp DOWN  &kp RIGHT &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
 			&tog FREE &tog FREE &tog FREE &tog FREE &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
-						      &tog FREE &tog FREE     &tog FREE &tog FREE
+						      &tog FREE &kp SPACE     &tog FREE &tog FREE
 			>;
 		};
     };
