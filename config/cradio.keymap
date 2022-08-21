@@ -134,10 +134,10 @@
 	// Free time layout
                 ext_layer {
 		bindings = <
-		$tog BASE $tog BASE $tog BASE $tog BASE $tog BASE     $tog BASE $tog BASE &kp UP    $tog BASE $tog BASE
-		$tog BASE $tog BASE $tog BASE $tog BASE $tog BASE     $tog BASE &kp LEFT  &kp DOWN  &kp RIGHT $tog BASE
-		$tog BASE $tog BASE $tog BASE $tog BASE $tog BASE     $tog BASE $tog BASE $tog BASE $tog BASE $tog BASE
-					      $tog BASE $tog BASE     $tog BASE $tog BASE
+		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE $tog FREE &kp UP    $tog FREE $tog FREE
+		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE &kp LEFT  &kp DOWN  &kp RIGHT $tog FREE
+		$tog FREE $tog FREE $tog FREE $tog FREE $tog FREE     $tog FREE $tog FREE $tog FREE $tog FREE $tog FREE
+					      $tog FREE $tog FREE     $tog FREE $tog FREE
 		>;
 		};	
 		
