@@ -135,10 +135,10 @@
 	// Video time layout
                 video_layer {
 			bindings = <
-			&kp ESC   &tog FREE &kp UP    &tog FREE  &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
-			&tog FREE &kp LEFT  &kp DOWN  &kp RIGHT  &kp F         &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
-			&tog FREE &tog FREE &tog FREE &tog FREE  &tog FREE     &tog FREE &tog FREE &tog FREE &tog FREE &tog FREE
-						      &tog FREE  &kp SPACE     &tog FREE &tog FREE
+			&kp ESC    &tog VIDEO &kp UP     &tog VIDEO &tog VIDEO     &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO
+			&tog VIDEO &kp LEFT   &kp DOWN   &kp RIGHT  &kp F          &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO
+			&tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO     &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO
+						         &tog VIDEO &kp SPACE      &tog VIDEO &tog VIDEO
 			>;
 		};
     };
