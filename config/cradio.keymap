@@ -18,6 +18,9 @@
     #define ACCENT 5
     #define SETTINGS 6
     #define VIDEO 7
+    #define GAME_BASE 8
+    #define GAME_N 9
+    #define GAME_F 10
 // -----------------
 
 &sk {
@@ -125,14 +128,14 @@
         // Used to change the keyboard's settings.
        		settings_layer {
 			bindings = <
-			&bootloader &none &none      &bt BT_CLR &bt BT_SEL 0      &bt BT_SEL 3 &none &unstick &none &bootloader 
+			&bootloader &none &tog GAME  &bt BT_CLR &bt BT_SEL 0      &bt BT_SEL 3 &none &unstick &none &bootloader 
 			&none       &none &tog VIDEO &none      &bt BT_SEL 1      &bt BT_SEL 4 &none &none    &none &none
 			&none       &none &none      &none      &bt BT_SEL 2      &bt BT_SEL 5 &none &none    &none &none
 						     &none      &none             &none        &none 
 			>;
                 };
 		
-	// Video time layout
+	// Video layout
                 video_layer {
 			bindings = <
 			&kp ESC    &tog VIDEO &kp UP     &tog VIDEO &tog VIDEO     &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO &tog VIDEO
@@ -141,5 +144,33 @@
 						         &tog VIDEO &kp SPACE      &tog VIDEO &tog VIDEO
 			>;
 		};
+	// Game layout
+		game_layer {
+			bindings = <
+			&kp Q &kp W &kp E &kp R      &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
+			&kp A &kp S &kp D &kp F      &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI
+			&kp Z &kp X &kp C &kp V      &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp COLON
+				          &mo GAME_N &mo GAME_F      &kp SPACE &tog GAME
+			>;
+		};
+	// Game layout numers
+		game_numbers_layer_{
+			bindings = <
+			&kp N6    &kp N7     &kp N8 &kp N9 &kp N0        &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+			&kp N1    &kp N2     &kp N3 &kp N4 &kp N5        &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+			&sk LCTRL &sk LSHIFT &none  &none  &kp TAB       &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+				   		    &none  &tog GAME     &tog GAME &tog GAME
+			>;
+		};
+	// Game f keys layout
+		game_numbers_fkeys {
+			bindings = <
+			&kp F1    &kp F2     &kp F3 &kp F4     &kp F5        &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+			&kp F6    &kp F7     &kp F8 &kp F9     &kp F10       &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+			&sk LCTRL &sk LSHIFT &none  &none      &kp TAB       &tog GAME &tog GAME &tog GAME &tog GAME &tog GAME
+				   		    &tog GAME  &none         &tog GAME &tog GAME
+			>;
+		};
+	
     };
 };
